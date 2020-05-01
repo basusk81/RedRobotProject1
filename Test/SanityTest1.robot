@@ -19,6 +19,7 @@ MyFirstSeleniumTest
     Sleep     3s
     #Click Button    name=btnK         
     Sleep    3s    
+    Capture Page Screenshot    C:\Selenium\workspace\RobotProject1\Img1.png
     Log  Hello Preeta
     Close Browser
     
