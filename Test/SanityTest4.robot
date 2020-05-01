@@ -52,6 +52,7 @@ SampleTest2
     Click Element    id=welcome
     Sleep    2s
     #Click Element    xpath=//a[text='Logout']
+    Capture Page Screenshot    C:\Selenium\workspace\RobotProject1\Img2.png
     Click Element    link=Logout
     Sleep    2s
     Log    This Test Has Been Completed by %{username} on %{os}
