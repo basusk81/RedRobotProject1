@@ -11,7 +11,7 @@ ${Password}    admin123
 @{Credential}    Admin    admin123
 
 #DICTIONARY
-&{LoginData}    Username=Admin    Password=admin123
+&{LoginData}    Username=Admin    Password=admin123    Url=https://opensource-demo.orangehrmlive.com/
 
 *** Test Cases ***
 SampleTest1
@@ -52,7 +52,7 @@ SampleTest2
     
     
  SampleTest3
-    Open Browser    https://opensource-demo.orangehrmlive.com/    chrome
+    Open Browser    &{LoginData}[Url]    chrome
     Set Browser Implicit Wait    3s
     Maximize Browser Window
     Input Text    id=txtUsername    &{LoginData}[Username]

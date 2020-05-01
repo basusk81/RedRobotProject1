@@ -38,7 +38,7 @@ SampleTest2
     #Click Element    xpath=//a[text='Logout']
     Click Element    link=Logout
     Sleep    2s
-    Log    Test Has Been Completed
+    Log    First Test Has Been Completed
 
 
 *** Test Cases ***
@@ -55,5 +55,5 @@ SampleTest2
     Capture Page Screenshot    C:\Selenium\workspace\RobotProject1\Img2.png
     Click Element    link=Logout
     Sleep    2s
-    Log    This Test Has Been Completed by %{username} on %{os}
+    Log   Second Test Has Been Completed by %{username} on %{os}
     #Close Browser
