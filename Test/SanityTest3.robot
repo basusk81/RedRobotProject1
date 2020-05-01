@@ -14,45 +14,47 @@ ${Password}    admin123
 &{LoginData}    Username=Admin    Password=admin123
 
 *** Test Cases ***
-# SampleTest1
-    # Open Browser    https://opensource-demo.orangehrmlive.com/    chrome
-    # Set Browser Implicit Wait    3s
-    # Input Text    id=txtUsername    ${UserName}
-    # Sleep    2s
-    # Input Text    id=txtPassword   ${Password}
-    # Sleep    2s
-    # Click Button    id=btnLogin
-    # Sleep    2s
-    # Click Element    id=welcome    
-    # Sleep    2s
-    # #Click Element    xpath=//a[text='Logout']   
-    # Click Element    link=Logout
-    # Sleep    2s     
-    # Log    Test Has Been Completed
-    # Close Browser   
+SampleTest1
+    Open Browser    https://opensource-demo.orangehrmlive.com/    chrome
+    Set Browser Implicit Wait    3s
+    Maximize Browser Window
+    Input Text    id=txtUsername    ${UserName}
+    Sleep    2s
+    Input Text    id=txtPassword   ${Password}
+    Sleep    2s
+    Click Button    id=btnLogin
+    Sleep    2s
+    Click Element    id=welcome    
+    Sleep    2s
+    #Click Element    xpath=//a[text='Logout']   
+    Click Element    link=Logout
+    Sleep    2s     
+    Log    Test Has Been Completed
+    Close Browser   
     
         
-# SampleTest2
-    # Open Browser    https://opensource-demo.orangehrmlive.com/    chrome
-    # Set Browser Implicit Wait    3s
-    # Input Text    id=txtUsername    @{Credential}[0]
-    # Sleep    2s
-    # Input Text    id=txtPassword    @{Credential}[1]
-    # Sleep    2s
-    # Click Button    id=btnLogin
-    # Sleep    2s
-    # Click Element    id=welcome    
-    # Sleep    2s
-    # #Click Element    xpath=//a[text='Logout']   
-    # Click Element    link=Logout
-    # Sleep    2s     
-    # Log    Test Has Been Completed
-    # Close Browser   
+SampleTest2
+    Open Browser    https://opensource-demo.orangehrmlive.com/    chrome
+    Set Browser Implicit Wait    3s
+    Maximize Browser Window
+    Input Text    id=txtUsername    @{Credential}[0]
+    Sleep    2s
+    Input Text    id=txtPassword    @{Credential}[1]
+    Sleep    2s
+    Click Button    id=btnLogin
+    Sleep    2s
+    Click Element    id=welcome    
+    Sleep    2s
+    Click Element    link=Logout
+    Sleep    2s     
+    Log    Test Has Been Completed
+    Close Browser   
     
     
  SampleTest3
     Open Browser    https://opensource-demo.orangehrmlive.com/    chrome
     Set Browser Implicit Wait    3s
+    Maximize Browser Window
     Input Text    id=txtUsername    &{LoginData}[Username]
     Sleep    2s
     Input Text    id=txtPassword    &{LoginData}[Password]

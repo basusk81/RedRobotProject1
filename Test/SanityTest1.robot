@@ -12,6 +12,7 @@ MyFirstTest
 MyFirstSeleniumTest
     Open Browser    https://www.google.com    chrome
     Set Browser Implicit Wait    3s
+    Maximize Browser Window
     Input Text    name=q    Python Automation
     #Click Element    name=btnK 
     Press Keys    name=q     ENTER

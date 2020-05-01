@@ -7,6 +7,7 @@ Library    SeleniumLibrary
 SampleTest
     Open Browser    https://opensource-demo.orangehrmlive.com/    chrome
     Set Browser Implicit Wait    3s
+    Maximize Browser Window
     Input Text    id=txtUsername    Admin
     Sleep    2s
     Input Text    id=txtPassword   admin123

@@ -26,6 +26,7 @@ SampleTest2
     [Tags]    Smoke
     #Open Browser    https://opensource-demo.orangehrmlive.com/    chrome
     Set Browser Implicit Wait    3s
+    Maximize Browser Window
     Input Text    id=txtUsername    @{Credential}[0]
     Sleep    2s
     Input Text    id=txtPassword    @{Credential}[1]
@@ -45,6 +46,7 @@ SampleTest2
      [Tags]    Sanity
     #Open Browser    https://opensource-demo.orangehrmlive.com/    chrome
     Set Browser Implicit Wait    3s
+    Maximize Browser Window
     Login
     Sleep    2s
     Click Element    id=welcome
